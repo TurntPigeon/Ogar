@@ -58,25 +58,25 @@ function GameServer() {
         borderBottom: 6000, // Bottom border of map (Vanilla value: 11180.3398875)
         spawnInterval: 20, // The interval between each food cell spawn in ticks (1 tick = 50 ms)
         foodSpawnAmount: 10, // The amount of food to spawn per interval
-        foodStartAmount: 100, // The starting amount of food in the map
-        foodMaxAmount: 500, // Maximum food cells on the map
-        foodMass: 1, // Starting food size (In mass)
+        foodStartAmount: 500, // The starting amount of food in the map
+        foodMaxAmount: 2000, // Maximum food cells on the map
+        foodMass: 3, // Starting food size (In mass)
         virusMinAmount: 10, // Minimum amount of viruses on the map.
         virusMaxAmount: 50, // Maximum amount of viruses on the map. If this amount is reached, then ejected cells will pass through viruses.
         virusStartMass: 100, // Starting virus size (In mass)
         virusFeedAmount: 7, // Amount of times you need to feed a virus to shoot it
-        ejectMass: 12, // Mass of ejected cells
-        ejectMassLoss: 16, // Mass lost when ejecting cells
-        ejectSpeed: 160, // Base speed of ejected cells
-        ejectSpawnPlayer: 50, // Chance for a player to spawn from ejected mass
-        playerStartMass: 10, // Starting mass of the player cell.
-        playerMaxMass: 22500, // Maximum mass a player can have
+        ejectMass: 500, // Mass of ejected cells
+        ejectMassLoss: 0, // Mass lost when ejecting cells
+        ejectSpeed: 320, // Base speed of ejected cells
+        ejectSpawnPlayer: 75, // Chance for a player to spawn from ejected mass
+        playerStartMass: 100, // Starting mass of the player cell.
+        playerMaxMass: 100000, // Maximum mass a player can have
         playerMinMassEject: 32, // Mass required to eject a cell
         playerMinMassSplit: 36, // Mass required to split
-        playerMaxCells: 16, // Max cells the player is allowed to have
-        playerRecombineTime: 30, // Base amount of seconds before a cell is allowed to recombine
-        playerMassDecayRate: .002, // Amount of mass lost per second
-        playerMinMassDecay: 9, // Minimum mass for decay to occur
+        playerMaxCells: 500, // Max cells the player is allowed to have
+        playerRecombineTime: 15, // Base amount of seconds before a cell is allowed to recombine
+        playerMassDecayRate: .001, // Amount of mass lost per second
+        playerMinMassDecay: 5, // Minimum mass for decay to occur
         playerMaxNickLength: 15, // Maximum nick length
         playerDisconnectTime: 60, // The amount of seconds it takes for a player cell to be removed after disconnection (If set to -1, cells are never removed)
         tourneyMaxPlayers: 12, // Maximum amount of participants for tournament style game modes
